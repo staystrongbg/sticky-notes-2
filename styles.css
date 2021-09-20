@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Caveat';
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  transition: ease-in-out 0.4s;
+  background-color: blanchedalmond;
+}
+.btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: ease-out 0.3s;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.btn:active {
+  scale: 0.95;
+}
+.modal {
+  display: none;
+  width: 600px;
+  height: 400px;
+  background: linear-gradient(to right, #e22865, #37adcd);
+  color: #222;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  border-bottom-right-radius: 105px 15px;
+  border-bottom-left-radius: 20px 115px;
+  border-top-left-radius: 250px 15px;
+  overflow: hidden;
+}
+textarea {
+  width: 100%;
+  height: 90%;
+  background-color: whitesmoke;
+  outline: 0;
+  border: 0;
+  margin-top: 40px;
+  padding: 5px 10px;
+  font-size: 28px;
+  border-bottom-right-radius: 105px 15px;
+  border-bottom-left-radius: 20px 115px;
+  border-top-left-radius: 250px 15px;
+}
+
+.fas {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  min-height: 260px;
+  width: 260px;
+  color: black;
+  padding: 10px;
+  margin: 5px 0px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+  font-family: Caveat;
+  font-weight: 600;
+  font-size: 32px;
+  word-wrap: break-word;
+  user-select: none;
+  cursor: pointer;
+  animation: ease-out explode 0.5s;
+  border-bottom-right-radius: 105px 15px;
+  border-bottom-left-radius: 20px 115px;
+  border-top-left-radius: 250px 15px;
+}
+.container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+}
+.title div {
+  position: absolute;
+  top: 0;
+  right: -45px;
+  transform: rotate(-8deg);
+  margin: auto;
+}
+
+h1 {
+  font-size: 70px;
+  white-space: nowrap;
+}
+.logo {
+  width: 40px;
+  height: 60px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+span {
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
